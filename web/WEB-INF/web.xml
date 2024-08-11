@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!--  Servlet for handling 404 errors  -->
+    <servlet>
+    <servlet-name>InsertSer</servlet-name>
+    <servlet-class>InsertSer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>InsertSer</servlet-name>
+    <url-pattern>/InsertSer</url-pattern>
+    </servlet-mapping>
+    <!--  Servlet for retrieving user information  -->
+    <servlet>
+    <servlet-name>RetrieveSer</servlet-name>
+    <servlet-class>RetrieveSer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>RetrieveSer</servlet-name>
+    <url-pattern>/retrieve</url-pattern>
+    </servlet-mapping>
+    <!--  Servlet for updating user information  -->
+    <servlet>
+    <servlet-name>UpdateSer</servlet-name>
+    <servlet-class>UpdateSer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>UpdateSer</servlet-name>
+    <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <!--  Servlet for deleting user information  -->
+    <servlet>
+    <servlet-name>DeleteSer</servlet-name>
+    <servlet-class>DeleteSer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>DeleteSer</servlet-name>
+    <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+</web-app>
